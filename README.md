@@ -1,4 +1,10 @@
-# Land Survey Viewer
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-64.png">
+    <img src="assets/logo-light-64.png" alt="" width="40" height="40">
+  </picture>
+  Land Survey Viewer
+</h1>
 
 **Windows Technical Preview · 0.1.0-preview**
 
