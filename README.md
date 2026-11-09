@@ -7,13 +7,15 @@ Land Survey Viewer opens a land surveyor's deliverables — DWG/DXF drawings and
 🌐 **Website:** https://maysker.github.io/land-survey-viewer/
 ⬇️ **Download:** [Latest release](https://github.com/Maysker/land-survey-viewer/releases/latest)
 
+> **Built for one specific workflow.** Land Survey Viewer was developed around one user's survey deliverables and working process in Belgium, and tested on a small set of real files. It is not a universal viewer. DWG and DXF files differ widely between surveyors, software and versions, so drawings that differ from what it was built for may open only partly, or not at all.
+
 > This repository holds the website, release notes and the installer downloads. The application source code is kept in a separate private repository.
 
 ---
 
 ## What it does
 
-- **Open a surveyor's DWG directly.** It is converted to DXF locally by the bundled converter (AutoCAD 2000 to 2018+ formats). DXF, TXT and CSV are read as they are.
+- **Read DWG, DXF and point files.** DWG is converted locally by the bundled converter, without AutoCAD. Support is built around the drawings the app was made for; other files may come through incomplete.
 - **Map View.** Parcel, buildings, height points, contours and other layers, optionally over official Belgian aerial imagery.
 - **3D Site View.** The existing terrain (3DFACE surface) with overlays, an approximate building volume and an optional orthophoto drape.
 - **Inspect.** Click any element to see its layer and coordinates at full source precision; copy or export them.
@@ -25,7 +27,9 @@ Land Survey Viewer **shows the survey as delivered**. It does not guess units, c
 
 ## Scope
 
-This preview was built around a specific Belgian survey workflow, so its scope is intentionally narrow:
+This preview was built for a specific Belgian survey workflow and does not try to be complete. What it was built and tested for:
+
+- **Tested with:** Belgian survey drawings (DWG/DXF) in Lambert 72 using the Flemish GM-BT layer convention, and simple TXT/CSV point lists.
 
 - **Coordinate system:** Belgian Lambert 72 (EPSG:31370) is recognised and placed on the map. Drawings in any other system open as a local plan without imagery.
 - **Layer conventions:** the Flemish GM-BT layer convention is recognised automatically; other drawings can be classified by hand in Map View.

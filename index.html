@@ -91,6 +91,8 @@
     .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
     .btn:hover { filter: brightness(1.08); }
     .cta-note { color: var(--muted); font-size: 14px; }
+    .hero-note { margin: 28px 0 0; max-width: 62ch; font-size: 14.5px; color: var(--muted); padding-left: 14px; border-left: 2px solid var(--warn); }
+    .hero-note strong { color: var(--text); }
 
     section { padding: 72px 0; border-bottom: 1px solid var(--line); }
     h2 { font-size: clamp(26px, 3.6vw, 34px); letter-spacing: -.01em; margin: 0 0 12px; }
@@ -193,6 +195,7 @@
         <a class="btn" href="#scope">What it supports</a>
         <span class="cta-note">Windows 10 / 11 · 64-bit · free preview</span>
       </div>
+      <p class="hero-note"><strong>Built for one specific workflow, not as a universal viewer.</strong> It was developed around one user's survey deliverables and tested on a small set of real files. Drawings from other surveyors or software may open only partly, or not at all. <a href="#scope">Read the scope</a>.</p>
     </div>
   </div>
 
@@ -203,8 +206,8 @@
       <div class="grid">
         <div class="card">
           <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 14h8M8 17h5"/></svg>
-          <h3>Opens DWG directly</h3>
-          <p>A bundled converter reads AutoCAD 2000 to 2018+ drawings on your machine. DXF, TXT and CSV point files open as they are.</p>
+          <h3>Reads DWG, DXF and point files</h3>
+          <p>A bundled converter reads DWG on your machine, without AutoCAD. Support is built around the drawings it was made for; other files may come through incomplete.</p>
         </div>
         <div class="card">
           <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>
@@ -239,9 +242,13 @@
     <div class="wrap">
       <h2>Shown as delivered</h2>
       <p class="section-lede">Land Survey Viewer is a viewer, not a CAD, GIS or engineering tool. It never fills gaps with guesses — if something isn't in the drawing, it isn't shown.</p>
+      <div class="callout" style="margin:0 0 36px">
+        <strong>Made for one workflow.</strong> This preview was developed for a specific user's survey deliverables and working process in Belgium, and it has been tested on a small number of real files. It does not try to be universal or complete. A DWG or DXF is not one fixed format: content, layer conventions, object types and versions differ between surveyors and software. Files that differ from what it was built for may open with missing layers, without terrain, or not at all. Please try it with your own files before relying on it. If something doesn't open as expected, you can <a href="https://github.com/Maysker/land-survey-viewer/issues">open an issue</a> — but never attach survey files you aren't allowed to share.
+      </div>
       <div class="two">
         <div>
           <ul class="plain">
+            <li><strong>Tested with</strong> <span>— Belgian survey drawings (DWG/DXF) in Lambert 72 and the Flemish GM-BT layer convention, plus simple TXT/CSV point lists.</span></li>
             <li><strong>Lambert 72 (EPSG:31370)</strong> <span>— recognised and placed on the map with imagery.</span></li>
             <li><strong>Other coordinate systems</strong> <span>— open as a local plan, without imagery or positioning.</span></li>
             <li><strong>Flemish GM-BT layers</strong> <span>— recognised automatically; other layer names can be classified by hand.</span></li>
@@ -257,16 +264,13 @@
           </ul>
         </div>
       </div>
-      <div class="callout">
-        <strong>A focused preview.</strong> This build grew out of a specific Belgian survey workflow, so its scope is intentionally narrow. If your files don't open the way you expect, please <a href="https://github.com/Maysker/land-survey-viewer/issues">open an issue</a> — but never attach survey files you aren't allowed to share.
-      </div>
     </div>
   </section>
 
   <section id="download">
     <div class="wrap">
       <h2>Download</h2>
-      <p class="section-lede">Free technical preview for Windows 10 and 11 (64-bit). Python and everything else the app needs are included.</p>
+      <p class="section-lede">Free technical preview for Windows 10 and 11 (64-bit). Python and everything else the app needs are included. As a preview made for one workflow, it comes without any guarantee that your files will open correctly.</p>
       <div class="download">
         <div class="card">
           <div class="dl-file">
