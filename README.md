@@ -6,7 +6,7 @@
   Land Survey Viewer
 </h1>
 
-**Windows Technical Preview · 0.1.0-preview**
+**Windows Technical Preview · 0.1.1-preview**
 
 Land Survey Viewer opens a land surveyor's deliverables — DWG/DXF drawings and TXT/CSV point files — and shows them on a 2D map and in a 3D site view, exactly as delivered. No AutoCAD, no GIS software, and your files never leave your computer.
 
@@ -65,7 +65,7 @@ Preview builds are not yet code-signed, so Microsoft Defender SmartScreen may wa
 Each release lists the SHA-256 checksum of every file. In PowerShell:
 
 ```powershell
-Get-FileHash .\LandSurveyViewer-0.1.0-preview-setup.exe -Algorithm SHA256
+Get-FileHash .\LandSurveyViewer-0.1.1-preview-setup.exe -Algorithm SHA256
 ```
 
 The result must match the checksum in the release notes.
